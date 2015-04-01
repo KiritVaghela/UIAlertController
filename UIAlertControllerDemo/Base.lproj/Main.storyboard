@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="W9H-WC-nAw">
+            <objects>
+                <viewController id="lMU-kA-49x" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3PU-iB-e6y"/>
+                        <viewControllerLayoutGuide type="bottom" id="MBa-yL-QVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="taj-ml-ELm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB0-b8-fT5">
+                                <rect key="frame" x="237" y="70" width="127" height="30"/>
+                                <state key="normal" title="Show ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showActionSheet:" destination="lMU-kA-49x" eventType="touchUpInside" id="xM5-PS-yXe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9P-xP-Z9Q">
+                                <rect key="frame" x="243" y="130" width="114" height="30"/>
+                                <state key="normal" title="Show input form">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showInputForm:" destination="lMU-kA-49x" eventType="touchUpInside" id="tcG-ox-cga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XB0-b8-fT5" firstAttribute="top" secondItem="3PU-iB-e6y" secondAttribute="bottom" constant="50" id="RCt-g0-2z2"/>
+                            <constraint firstAttribute="centerX" secondItem="XB0-b8-fT5" secondAttribute="centerX" id="Ylo-Er-nEf"/>
+                            <constraint firstItem="f9P-xP-Z9Q" firstAttribute="top" secondItem="XB0-b8-fT5" secondAttribute="bottom" constant="30" id="eh0-x0-yoL"/>
+                            <constraint firstAttribute="centerX" secondItem="f9P-xP-Z9Q" secondAttribute="centerX" id="njY-8R-m6p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvo-SF-CTc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-12"/>
+        </scene>
+    </scenes>
+</document>
