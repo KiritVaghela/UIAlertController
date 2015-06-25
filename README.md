@@ -8,6 +8,7 @@ UIAlertController example for iOS
   [2]: https://github.com/KiritVaghela/UIAlertController/blob/master/ScreenShot2.png
 
 Show ActionSheet
+
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
                                                                    message:@"This is an action sheet."
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
