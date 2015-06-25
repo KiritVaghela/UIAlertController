@@ -27,7 +27,7 @@
 - (IBAction)showActionSheet:(id)sender {
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
-                                                                   message:@"This is an action shhet."
+                                                                   message:@"This is an action sheet."
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction* cameraAction = [UIAlertAction actionWithTitle:@"Take A Photo" style:UIAlertActionStyleDefault
